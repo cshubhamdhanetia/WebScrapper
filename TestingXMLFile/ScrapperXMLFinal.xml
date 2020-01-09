@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebScrapper>	
+	<session>
+
+		<input name="RequestVerificationToken">__RequestVerificationToken</input>
+
+		<input name="SessionIdToken">ASP.NET_SessionId</input>		
+
+	</session>
+
+	<form name="Login" GetURL="http://localhost/CygnetVATProduction.Web/login" PostURL="http://localhost/CygnetVATProduction.Web/login" type="POST">
+		
+		<input id="username" name="UserName">shubham.dhanetia@cygnetinfotech.com</input>
+
+		<input id="password" name="Password">Admin@12345</input>
+
+
+		<regex>
+		
+			<regexinput name="DashboardTest" tag="span" attribute="class">user-name text-grey</regexinput>
+
+		</regex>
+
+			
+	</form>
+
+
+
+	<form name="CompanyChange" GetURL="http://localhost/CygnetVATProduction.Web/dashboard" 						PostURL="http://localhost/CygnetVATProduction.Web/Dashboard/BusinessUnitChange" type="POST">
+
+		<input id="CompanyID" name="CompanyID">1H8DYJm4dgZZa3MtvOfK5g==</input>
+	
+		<input id="formSubscriberCompanyID" name="formSubscriberCompanyID">WMTE4g9gHldym/M2wTDzSw==</input>
+			
+	</form>
+
+
+
+	<form name="CompanyChangeTest" GetURL="http://localhost/CygnetVATProduction.Web/dashboard" PostURL="" 	type="GET">
+
+	</form>
+
+	<form name="GetCitiesByState" GetURL = "http://localhost/CygnetVATProduction.Web/Master/GetCitiesByState" PostURL="" type="GET">
+
+		<input id="id" name="id">3</input>
+		<input id="_" name="_">1546933516742</input>
+	
+	</form>
+
+
+	
+	
+</WebScrapper>
+		
